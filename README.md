@@ -9,18 +9,30 @@
 
 以下是使用流程：
 第一步：创建一对虚拟COM口（比如COM7和COM8），我利用的软件是Configure Virtual Serial Port Driver（VSPD）
-第二步：用串口助手等工具测试创建出来的虚拟COM口是否能正常护发消息。
-第三步：打开 SerialToOFS.exe，首次会自动检测同目录的 FunscriptSimulator3D.exe。
-第四步：配置参数，如：
+<img width="1212" height="796" alt="image" src="https://github.com/user-attachments/assets/62a2a29f-ddee-4274-99a7-af19808fb4a6" />
+
+第二步：用串口助手等工具测试创建出来的虚拟COM口是否能正常互发消息。
+<img width="3570" height="1350" alt="image" src="https://github.com/user-attachments/assets/fa3f8897-4424-4447-b5f5-5db5b6e452e3" />
+
+第三步：下载FunscriptSimulator3D.exe，下载地址：https://github.com/OppositeOdd/OFS_Simulator3D
+
+第四步：打开 SerialToOFS.exe，首次会自动检测同目录的 FunscriptSimulator3D.exe。
+<img width="864" height="234" alt="image" src="https://github.com/user-attachments/assets/2f31e757-5bec-4f20-a333-ec67ba64244b" />
+
+第五步：配置参数，如：
     1.串口号（比如，我创建的是COM7和COM8，我选择COM8）
     2.波特率（默认115200）
     3.WebSocket 地址（本地地址：ws://127.0.0.1:8080/ofs）
     4.点“应用配置”，程序会自动更新配置文件config。
-第五步：配置VAM和ToySereialController插件,如：
+    <img width="756" height="624" alt="image" src="https://github.com/user-attachments/assets/b66a57cb-25b0-492f-a055-96bafc049e9d" />
+
+第六步：配置VAM和ToySereialController插件,如：
     1.启动VAM,进入一个可用场景，
     2.在ToySereialController插件中配置连接方式为：Serial
     3.输出COM口选择COM7（COM7和COM8是一对可相互发送数据的虚拟串口）
     4.开始游玩场景，并观察右方的3D模拟器是否有动作。
+    <img width="2654" height="1402" alt="image" src="https://github.com/user-attachments/assets/8fdbdc17-0695-4eaa-8d0b-e57e75ed447d" />
+
 
 FAQ:
 1.如果VAM内ToySereialController插件的设置界面是空白？ 
